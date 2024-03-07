@@ -1,0 +1,443 @@
+*{
+	1000px
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #E3D4BD;
+	font-family: arial;
+
+}
+a{
+	text-decoration: none;
+
+}
+ol, ul{
+	list-style: none;
+
+}
+
+#i{
+	color:#000;
+	font-size: 3em;
+	padding: 0.3em;
+	
+
+}
+
+#i:hover{
+	color: #E3D4BD;
+	
+}
+header{
+	position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  z-index: 100;
+	color: #000;
+	display:flex;
+	background-color: #979FB7;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	
+
+
+}
+#check{
+	display: none;
+}
+
+.checkbtm{
+	font-size: 25px;
+	color: #000;
+	float: right;
+	line-height:80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+#lista{
+	font-family: arial;
+	display: flex;
+	gap: 2em;
+	padding-right: 15px ;
+}
+
+
+.lista_1 a{
+	color: #000;
+}
+
+.secction1 div h2{
+
+	text-align: center;
+}
+.secction1{
+	padding-right: 350px;
+	padding-left: 350px;
+}
+
+#acerca-img{
+
+	border-radius: 15px;
+	width: 210px;
+	height: 250px;
+
+	
+
+}
+
+.acerca_p{
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.resumen_acerca{
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.acerca_de{
+	display: flex;
+}
+h5{
+	padding-left: 15px;
+	display: inline-block;
+}
+
+footer{
+
+	color: #fff;
+	background-color: black ;
+
+}
+footer ol li{
+	font-family: arial;
+	padding: 0.5em;
+}
+
+#seccion_principal{
+
+	background-color: #fff;
+	padding: 1em;
+	padding-top: 85px;
+	margin: 0 auto;
+	
+}
+
+
+.div_pesao{
+	width: 250px;
+	align-items: center;
+	border-radius: 10px;
+	padding: 0;
+	padding-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	flex-direction: column;
+	display: flex;
+	
+	
+}
+.div_pesao:hover {
+    box-shadow: 3px 5px 8px 0px rgba(0,0,0,0.5);
+}
+.pesado{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.div_pesao p {
+
+	margin: 0;
+	padding: 5px;
+}
+.div img{
+	border-radius: 15px;
+	width: 80px;
+}
+
+#img_pesao{
+	height: 200px;
+    width: 250px;
+	border-radius: 10px;
+
+	
+}
+.div-seccion-2{
+	padding: 3em;
+	
+}
+.h2_cats{
+
+	display: block;
+	text-align: center;
+
+}
+.leer_mas a{
+	color: #000;
+	text-decoration: none;
+}
+
+.leer_mas a:hover{
+	color: blueviolet;
+}
+
+.form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 15px;
+
+    width: 40%;
+    margin: 10px auto;
+
+    padding: 25px;
+}
+
+.form-header h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ----------- Formulario ----------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ----------- Campos formulario ----------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+/* ----------- Para pantallas de mas de 700px ----------- */
+
+@media only screen and (min-widht: 700px) {
+
+
+    .form-row{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    } 
+}
+
+.form-row textarea {
+    font-family: "helvetica", "arial", sans-serif;
+    font-size: 14px;
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+}
+
+/* ----------------------- para pantallas de mas de 700px ----------------------- */
+
+.form-row textarea {
+    
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color: #5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+/* --------------- para pantallas de mas de 700px --------------- */
+
+
+
+
+
+
+
+@media (max-width: 900px){
+
+	.formulario{
+		padding: 0;
+	}
+	.acerca_de {
+
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+	}
+	.acerca_p{
+		text-align: center;
+	}
+	.secction1{
+		
+		padding:0;
+	}
+}
+
+
+@media (max-width: 680px){
+	#morir{
+		color: blue;
+	}
+
+	.secction1{
+
+		padding:0;
+	}
+
+	#acerca-img{
+	display: flex;
+
+	border-radius: 15px;
+	width: 200px;
+	height: 230px;
+
+	}
+
+
+	.acerca_de{
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.acerca_p{
+		text-align: center;
+	}
+
+	.pesado{
+		margin: 0 auto;
+	    padding:0;
+	    gap:0;
+	    display:block;
+	}
+	.div-seccion-2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.checkbtm{
+		display: block;
+	}
+
+	header ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #979FB7;
+		text-align: center;
+    	margin-top: 0;
+		top:80px;
+		left:100%;
+		transition: all 0.5s;
+
+	}
+
+	header ul li:hover{
+		border-radius: 15px;
+		background-color: #777D8E;
+
+
+	}
+	#check:checked ~ ul{
+		left:0%;
+		display: block;
+	}
+
+
+	header nav ul li{
+		display: block;
+		padding: 50px 0;
+		line-height: 30px;
+	}
+
+	header nav ul li a{
+		font-size: 20px;
+	}
+	ul{
+		padding-left: 0;
+	}
+	
+
+
+	
+	#check:checked ~ .checkbtm{
+		color: #000;
+	}
+
+
+}
+
